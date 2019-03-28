@@ -27,7 +27,17 @@ Sortie attendue:
 */
 
 function filterOffensiveComments(comments, bannedWords) {
-}
+  const tab = comments.filter(tabi => {
+    for (let i = 0; i < bannedWords.length; i++) {
+      if (tabi.toLowerCase().includes(bannedWords[i])) {
+        return false
+      }
+    }
+    return true
 
+
+  })
+  return tab
+}
 // Ne pas modifier l'export
 module.exports = filterOffensiveComments;

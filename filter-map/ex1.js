@@ -22,7 +22,12 @@ Sortie attendue:
 
 */
 
-function getJedisNames(characters) {
+function getJedisNames(character) {
+  const arr = character.filter(obj => obj.side.includes('light'))
+  const arr2 = arr.map(obj => obj.name) 
+  return arr2 
 }
+
+    
 
 module.exports = getJedisNames;

@@ -50,7 +50,16 @@ Sortie attendue:
 
 */
 
-function getStudentsPerCurriculum(campuses, curriculumName) {
+
+let getStudentsPerCurriculum = campus => {
+  const result = campus.filter(obj=> obj.name===('JS/React'))
+  return result 
 }
+   
+
+
+
+   
+
 
 module.exports = getStudentsPerCurriculum;

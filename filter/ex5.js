@@ -39,7 +39,11 @@ Exemple d'entrée:
  */
 
 function searchWordFilter(items, search) {
-}
+  
+    const tab = items.filter(tabi => tabi.toLowerCase().includes(search))
+    return tab
+  }
+
 
 // Ne pas modifier l'export
 module.exports = searchWordFilter;
